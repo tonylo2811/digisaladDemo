@@ -1,0 +1,29 @@
+:root{
+    /* spacing */
+    --pd-24: 24px;
+    --pd-22: 22px;
+    --pd-20: 20px;
+    --pd-16: 16px;
+    --pd-14: 14px;
+    --pd-12: 12px;
+    --pd-10: 12px;
+    --pd-8: 8px;
+
+    /* color */
+    --c-start-project: linear-gradient(90deg, #4EE5EA 3.94%, #26D0A8 94.73%);
+    --c-grey-white: #E5E5E5;
+    --c-white: #FFFFFF;
+    --c-black: #262626;
+    --c-main: #26C6D0;
+    --c-purple: #585880;
+    --c-orange: #FFBC58;
+
+
+    /* spacing */
+    --section-about-pd-top: 125px;
+    --section-about-pd-bottom: 215px;
+
+    --section-inbetweenSection-pd-top: 125px;
+    --section-inbetweenSection-pd-bottom: 215px;
+
+}

@@ -1,0 +1,100 @@
+.mySwiper{
+    width: 100%;
+
+    background-image: url('../assests/slider-bg.png');
+}
+
+
+
+
+
+
+.slider-item-container{
+    display: flex;
+    align-items: center;
+
+    padding: 250px 80px;
+}
+
+@media screen and (max-width: 1024px) {
+    .slider-item-container{
+        flex-direction: column !important;
+        justify-content: center !important;
+        padding: 100px 20px  !important;
+    }
+
+    .slider-item-container .left{
+        padding-right: 0 !important;
+    }
+
+    .slider-item-container .left,
+    .slider-item-container .right{
+        width: 70%  !important;
+        text-align: center;
+
+        margin-top: 15px;
+    }
+
+}
+
+
+.slider-item-container .left{
+    width: 50%;
+
+    padding-right: 50px;
+}
+
+.slider-item-container .left .img-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+
+    border-radius: 25px;
+}
+
+.slider-item-container .left img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slider-item-container .right{
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-item-container .right .subtitle{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.22222px;
+
+    margin-bottom: 20px;
+}
+
+.slider-item-container .right .title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+
+    letter-spacing: 3.63636px;
+
+    margin-bottom: 40px;
+}
+
+.slider-item-container .right .content{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    letter-spacing: 1px;
+}

@@ -1,0 +1,9 @@
+#experience{
+    color: var(--c-black);
+    padding-top: clamp(300px, 400px, 700px);
+}
+
+#experience p {
+    margin-top: 55px;
+    margin-bottom: 8px;
+}

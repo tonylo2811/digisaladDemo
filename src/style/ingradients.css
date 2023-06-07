@@ -1,0 +1,223 @@
+#ingradients{
+    background-color: var(--c-main);
+    /* padding-top: clamp(100px, 300px, 400px); */
+    /* padding-bottom: clamp(300px, 400px, 550px); */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+
+    color: var(--c-white);
+
+    position: relative;
+}
+
+#ingradients > *:last-child{
+    margin-bottom: 100px;
+}
+
+#ingradients h1::before{
+    text-decoration-color: var(--c-purple);
+}
+
+
+
+
+
+
+.ingradient-items{
+    width: 100%;
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Set the minimum column width to 200px */
+    gap: 60px 50px; 
+
+    grid-auto-flow: column;
+}
+
+@keyframes show_animate{
+    0% {
+        opacity: 0;
+      }
+    100% {
+        opacity: 1;
+    }
+}
+
+.ingradient-item-container{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    animation: show_animate 0.6s alternate;
+}
+
+.ingradient-item-container:nth-child(3n+1){
+    grid-column: 1;
+}
+
+.ingradient-item-container:nth-child(3n+2){
+    grid-column: 2;
+}
+
+.ingradient-item-container:nth-child(3n+3){
+    grid-column: 3;
+}
+
+@media screen and (max-width: 1024px) {
+    .ingradient-item-container:nth-child(2n+1){
+        grid-column: 1;
+    }
+
+    .ingradient-item-container:nth-child(2n+2){
+        grid-column: 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ingradient-item-container:nth-child(1n+1){
+        grid-column: 1;
+    }
+
+}
+
+.ingradient-item-container .img-container{
+    content: '';
+
+    position: relative;
+    width: 108px;
+    height: 108px;
+    display: block;
+    background-color: var(--c-white);
+
+    border-radius: 50%;
+    margin-bottom: var(--pd-20);
+}
+
+.ingradient-item-container img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+
+.ingradient-item-container .title{
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: var(--pd-14);
+
+    max-height: 40px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+.ingradient-item-container p{
+    margin-top: 0px;
+    margin-bottom: var(--pd-20);
+}
+
+.ingradient-item-container #button{
+    border: 1px solid var(--c-white);
+    border-radius: 30px;
+
+    padding: var(--pd-20) calc( var(--pd-20) * 1.75 );
+    margin-bottom: 60px;
+}
+
+.ingradient-item-container #button::after{
+    display: none;
+}
+
+
+#ingradients .view-more{
+    color: var(--c-orange);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 2px;
+}
+
+#ingradients #inbetweenSection{
+    background-image: url('../assests/anotherBg.png');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#ingradients  .ceo-container{
+    display: flex;
+    align-items: center;
+    padding: 130px 50px;
+}
+
+#ingradients  .ceo-container .left{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-right: 30px;
+}
+#ingradients  .ceo-container .right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ingradients  .ceo-container .right img{
+    max-width: 100px;
+}
+
+#ingradients  .ceo-container .right p{
+    font-size: 22px;
+    line-height: 48px;
+    letter-spacing: 2px;
+
+    text-align: left;
+}
+
+#inbetweenSection .ceo-container .left .ceo{
+    background-image: url('../assests/ceo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: unset;
+    width: 200px;
+    height: 200px;
+
+    margin-bottom: 40px;
+}
+
+#ingradients .ceo-container .left .title{
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#ingradients .ceo-container .left .subtitle{
+    font-style: italic;
+    font-size: 16px;
+    line-height: 16px;
+
+    text-align: center;
+    letter-spacing: 2px;
+}
